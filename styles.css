@@ -16,7 +16,9 @@ html {
 	max-width: 1500px;
 	margin: 0 auto;
 	padding: 0 20px;
+	overflow: hidden;
 }
+
 
 .purple {
 	color: #6415ff;
@@ -25,7 +27,7 @@ html {
 /* Header & Nav */
 .header {
 	background: #f1f1f1;
-	padding: 50px 0;
+	padding: 50px 20px;
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 	width: 100%;
 	z-index: 1000;
@@ -45,6 +47,7 @@ html {
 
 .header__logo-img {
 	height: 80px;
+	
 }
 
 .header__logo {
@@ -88,25 +91,36 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	padding: 100px 0;
+	
 }
 
 .hero__container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	margin: 100px;
+	width: 100%; 
+	max-width: 1020px;
+
 }
 
 .hero__title {
-	font-size: 68px;
+	font-size: 40px;
 	font-weight: 700;
 	margin-bottom: 26px;
 }
 
 .hero__description {
-	font-size: 26px;
+	font-size: 20px;
 	color: #666;
-}
+ }
+
+.hero__image img {
+    width: 100%;
+	height: auto;
+
+} 
+
 
 .header__button {
 	display: flex;
@@ -119,7 +133,7 @@ html {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	width: 400px;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 .button {
@@ -129,8 +143,8 @@ html {
 	font-weight: 600;
 	border: none;
 	cursor: pointer;
-	font-size: 20px;
-	width: 200px;
+	font-size: 18px;
+	width: 150px;
 	height: 50px;
 	background-color: #6415ff;
 	color: white;
@@ -139,13 +153,13 @@ html {
 /* Trusted Customers Section */
 .trusted {
 	text-align: center;
-	padding: 50px 0;
+	padding: 10px 0;
 }
 
 .trusted__title {
-	font-size: 26px;
+	font-size: 25px;
 	font-weight: 700;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 }
 
 .trusted__logos {
@@ -161,7 +175,7 @@ html {
 }
 
 .features__title {
-	font-size: 48px;
+	font-size: 40px;
 	margin: 20px 0;
 }
 
@@ -184,50 +198,53 @@ html {
 
 .features__description--container {
 	margin-bottom: 50px;
-	font-size: 26px;
+	font-size: 20px;
 }
 
 .feature__title {
-	font-size: 30px;
+	font-size: 26px;
 	margin: 10px 0;
 }
 
 .feature__description {
-	font-size: 20px;
+	font-size: 18px;
 	color: #666;
 }
 
 /* Quality Section */
 .quality {
-	padding: 60px 0;
+	padding: 20px 0;
 	background: white;
+
 }
 
 .quality__container {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 40px;
+    width: 100%;
+    max-width: 1020px;
+	
 }
 
 .quality__title {
-	font-size: 48px;
+	font-size: 40px;
 	margin: 20px 0;
 }
 
 .quality__description {
-	font-size: 26px;
+	font-size: 20px;
 	color: #666;
 	margin-bottom: 20px;
 }
 
 .quality__image {
-	height: 650px;
+	height: 550px;
 }
 
 /* Steps Section */
 .steps {
-	padding: 60px 0;
+	padding: 20px 0;
 	background: #f9f9f9;
 }
 
@@ -235,17 +252,19 @@ html {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 40px;
+    width: 100%;
+    max-width: 1020px;
 }
 
 .steps__image {
 	width: 100%;
 	display: block;
 	border: 2px solid #6415ff;
+	margin-top: 100px;
 }
 
 .steps__title {
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: bold;
 	margin: 20px 0;
 }
@@ -272,7 +291,7 @@ html {
 }
 
 .step__number {
-	font-size: 46px;
+	font-size: 26px;
 	font-weight: bold;
 	color: #cbd5e0;
 	display: flex;
@@ -288,15 +307,19 @@ html {
 }
 
 .step__title {
-	font-size: 28px;
+	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 2px;
 }
 
 .step__description {
-	font-size: 24px;
+	font-size: 18px;
 	color: #666;
 	margin-top: 0;
+}
+
+.steps__content {
+	margin-left: 100px;
 }
 
 /* Values Section */
@@ -306,13 +329,13 @@ html {
 }
 
 .values__title {
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: bold;
 	margin: 20px 0;
 }
 
 .values__description {
-	font-size: 26px;
+	font-size: 20px;
 	color: #666;
 	margin-bottom: 30px;
 	max-width: 600px;
@@ -338,12 +361,13 @@ html {
 	display: flex;
 	align-items: center;
 	background: white;
-	padding: 40px;
+	padding: 20px;
 	border-radius: 15px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 	transition: transform 0.2s ease-in-out;
 	gap: 20px;
 	border: 1px solid #6415ff;
+	margin: 0 50px;
 }
 
 .value:hover {
@@ -368,13 +392,13 @@ html {
 }
 
 .value__title {
-	font-size: 28px;
+	font-size: 20px;
 	font-weight: bold;
 	margin: 10px 0;
 }
 
 .value__description {
-	font-size: 24px;
+	font-size: 18px;
 	color: #666;
 }
 
@@ -385,19 +409,19 @@ html {
 
 /* Pricing Section */
 .pricing {
-	padding: 100px 0;
+	padding: 50px 0;
 	background: #f9f9f9;
 	text-align: center;
 }
 
 .pricing__title {
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: bold;
 	margin: 20px 0;
 }
 
 .pricing__description {
-	font-size: 26px;
+	font-size: 20px;
 	color: #666;
 	margin-bottom: 30px;
 	max-width: 600px;
@@ -409,6 +433,7 @@ html {
 	display: flex;
 	gap: 50px;
 	justify-content: center;
+	margin: 0 50px;
 }
 
 .pricing__card {
@@ -459,20 +484,20 @@ html {
 }
 
 .pricing__plan {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 15px;
 	text-transform: uppercase;
 }
 
 .pricing__price {
-	font-size: 48px;
+	font-size: 40px;
 	font-weight: bold;
 	margin: 15px 0;
 }
 
 .pricing__duration {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 600;
 	text-transform: uppercase;
 }
@@ -482,7 +507,7 @@ html {
 }
 
 .pricing__subtitle {
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 18px;
 	letter-spacing: 1.5;
@@ -493,7 +518,7 @@ html {
 }
 
 .pricing__features li {
-	font-size: 20px;
+	font-size: 18px;
 	margin: 20px 0;
 	letter-spacing: 1.5;
 	line-height: 1.5;
@@ -536,7 +561,7 @@ html {
 .footer {
 	background: #6415ff;
 	color: white;
-	padding: 50px 0;
+	padding: 100px;
 }
 
 .footer__top {
@@ -654,3 +679,5 @@ html {
 .footer__social-link img:hover {
 	opacity: 0.7;
 }
+
+
